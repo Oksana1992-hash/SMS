@@ -6,11 +6,11 @@ from tkinter import messagebox as mb
 
 def send_email():
 
-    sender_email = 'oksana1992h@yandex.ru'
-    recipient_email = 'oksana1992python@yandex.ru'
-    password = 'xwfxdjnnwjvamwtr' #Это пароль приложения! Не ящика!
-    subject = 'Проверка связи №1'
-    body = 'Привет №1 из Питона!'
+    sender_email = sender_email_entry.get() # 'oksana1992h@yandex.ru'
+    recipient_email = recipient_email_entry.get() # 'oksana1992python@yandex.ru'
+    password = password_entry.get() # 'xwfxdjnnwjvamwtr' #Это пароль приложения! Не ящика!
+    subject = subject_entry.get() # 'Проверка связи №1'
+    body = body_text.get(0, END) # 'Привет №1 из Питона!'
 
     msg = EmailMessage()
     msg.set_content(body)
